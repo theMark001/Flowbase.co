@@ -1,0 +1,251 @@
+.left-side {
+  width: 43%;
+}
+
+.head {
+  transform: rotate(-90deg) translateY(-140px);
+  margin-top: 235px;
+  margin-bottom: 330px;
+
+  &__name {
+    text-transform: uppercase;
+    font-family: 'Bai Jamjuree';
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: -0.01em;
+    color: $light-color;
+  }
+
+  &__secondname {
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-family: 'Bai Jamjuree';
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 96px;
+    letter-spacing: -0.01em;
+    color: $light-color;
+  }
+
+  &__work {
+    text-transform: uppercase;
+    color: $light-color  !important;
+  }
+}
+
+.social {
+  padding: 25px;
+  margin-bottom: 190px;
+
+  &__title {
+    text-transform: uppercase;
+    font-size: 16px !important;
+    letter-spacing: 0.08em !important;
+    margin-bottom: 16px;
+  }
+
+  &__inst {
+    display: block;
+    position: relative;
+    margin-bottom: 16px;
+    padding-left: 35px;
+
+    &:hover {
+      transition: .4s;
+      color: $orange-color;
+    }
+
+    &::before {
+      content: url(../../img/Instagram.png);
+      position: absolute;
+      display: block;
+      top: 4px;
+      left: 0;
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &__dribble {
+    position: relative;
+    padding-left: 35px;
+
+    &:hover {
+      transition: .4s;
+      color: $orange-color;
+    }
+
+    &::before {
+      content: url(../../img/Dribble.png);
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+.education {
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__subtitle {
+    margin-bottom: 12px;
+  }
+
+  &__text {
+    margin-bottom: 12px;
+  }
+
+  &__date {
+    color: $orange-color;
+  }
+
+  &__block {
+    margin-bottom: 40px;
+  }
+}
+
+.skills {
+  margin-top: 100px;
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__subtitle {
+    position: relative;
+    padding-bottom: 16px;
+    margin-bottom: 40px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 250px;
+      height: 4px;
+      background: linear-gradient(to right, #E94D35 0, #E94D35 90%, #F2F2F2 90%, #F2F2F2 100%);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+    }
+
+    &:nth-child(3)::before {
+      background: linear-gradient(to right, #E94D35 0, #E94D35 64%, #F2F2F2 64%, #F2F2F2 100%);
+    }
+
+    &:nth-child(5)::before {
+      background: linear-gradient(to right, #E94D35 0, #E94D35 40%, #F2F2F2 40%, #F2F2F2 100%);
+    }
+  }
+}
+
+@media (max-width: 1120px) {
+  .left-side {
+    width: 100%;
+  }
+
+  .head {
+    transform: rotate(0) translateY(0);
+    margin: 20px 0 0 0;
+    color: $dark-color;
+
+    &__name {
+      color: $dark-color;
+    }
+
+    &__secondname {
+      color: $dark-color;
+    }
+
+    &__work {
+      color: $dark-color  !important;
+    }
+  }
+
+  .social {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .social__inst {
+    padding-left: 0;
+  }
+
+  .social__inst::before {
+    display: none;
+  }
+
+  .social__dribble::before {
+    display: none;
+  }
+
+  .education {
+    text-align: center;
+  }
+
+  .skills {
+    text-align: center;
+    margin: 70px 0;
+  }
+
+  .skills__subtitle::before {
+    transform: translateX(-50%);
+    left: 50%;
+  }
+}
+
+@media (max-width: 640px) {
+  .social {
+    text-align: start;
+  }
+
+  .social__inst {
+    display: block;
+    position: relative;
+    margin-bottom: 16px;
+    padding-left: 35px;
+  }
+
+  .social__inst::before {
+    display: block;
+  }
+
+  .social__dribble::before {
+    display: inline;
+  }
+
+  .education {
+    text-align: start;
+  }
+
+  .skills {
+    text-align: start;
+  }
+
+  .skills__subtitle::before {
+    transform: translateX(0);
+    left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .head__secondname {
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-family: "Bai Jamjuree";
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: -0.01em;
+  }
+
+  .social {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

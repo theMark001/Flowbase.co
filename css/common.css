@@ -1,0 +1,375 @@
+@font-face {
+  font-family: "Bai Jamjuree";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/BaiJamjuree-Bold.woff") format("woff"), url("../fonts/BaiJamjuree-Bold.woff2") format("woff2"), url("../fonts/BaiJamjuree-Bold.eot") format("embedded-opentype"), url("../fonts/BaiJamjuree-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/Inter-Medium.woff") format("woff"), url("../fonts/Inter-Medium.woff2") format("woff2"), url("../fonts/Inter-Medium.eot") format("embedded-opentype"), url("../fonts/Inter-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Inter-Regular.woff") format("woff"), url("../fonts/Inter-Regular.woff2") format("woff2"), url("../fonts/Inter-Regular.eot") format("embedded-opentype"), url("../fonts/Inter-Regular.ttf") format("truetype");
+}
+.left-side {
+  width: 43%;
+}
+
+.head {
+  transform: rotate(-90deg) translateY(-140px);
+  margin-top: 235px;
+  margin-bottom: 330px;
+}
+.head__name {
+  text-transform: uppercase;
+  font-family: "Bai Jamjuree";
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+}
+.head__secondname {
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-family: "Bai Jamjuree";
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 96px;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+}
+.head__work {
+  text-transform: uppercase;
+  color: #ffffff !important;
+}
+
+.social {
+  padding: 25px;
+  margin-bottom: 190px;
+}
+.social__title {
+  text-transform: uppercase;
+  font-size: 16px !important;
+  letter-spacing: 0.08em !important;
+  margin-bottom: 16px;
+}
+.social__inst {
+  display: block;
+  position: relative;
+  margin-bottom: 16px;
+  padding-left: 35px;
+}
+.social__inst:hover {
+  transition: 0.4s;
+  color: #E94D35;
+}
+.social__inst::before {
+  content: url(../../img/Instagram.png);
+  position: absolute;
+  display: block;
+  top: 4px;
+  left: 0;
+  width: 24px;
+  height: 24px;
+}
+.social__dribble {
+  position: relative;
+  padding-left: 35px;
+}
+.social__dribble:hover {
+  transition: 0.4s;
+  color: #E94D35;
+}
+.social__dribble::before {
+  content: url(../../img/Dribble.png);
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+}
+
+.education__title {
+  margin-bottom: 40px;
+}
+.education__subtitle {
+  margin-bottom: 12px;
+}
+.education__text {
+  margin-bottom: 12px;
+}
+.education__date {
+  color: #E94D35;
+}
+.education__block {
+  margin-bottom: 40px;
+}
+
+.skills {
+  margin-top: 100px;
+}
+.skills__title {
+  margin-bottom: 40px;
+}
+.skills__subtitle {
+  position: relative;
+  padding-bottom: 16px;
+  margin-bottom: 40px;
+}
+.skills__subtitle::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 250px;
+  height: 4px;
+  background: linear-gradient(to right, #E94D35 0, #E94D35 90%, #F2F2F2 90%, #F2F2F2 100%);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.skills__subtitle:nth-child(3)::before {
+  background: linear-gradient(to right, #E94D35 0, #E94D35 64%, #F2F2F2 64%, #F2F2F2 100%);
+}
+.skills__subtitle:nth-child(5)::before {
+  background: linear-gradient(to right, #E94D35 0, #E94D35 40%, #F2F2F2 40%, #F2F2F2 100%);
+}
+
+@media (max-width: 1120px) {
+  .left-side {
+    width: 100%;
+  }
+  .head {
+    transform: rotate(0) translateY(0);
+    margin: 20px 0 0 0;
+    color: #000000;
+  }
+  .head__name {
+    color: #000000;
+  }
+  .head__secondname {
+    color: #000000;
+  }
+  .head__work {
+    color: #000000 !important;
+  }
+  .social {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .social__inst {
+    padding-left: 0;
+  }
+  .social__inst::before {
+    display: none;
+  }
+  .social__dribble::before {
+    display: none;
+  }
+  .education {
+    text-align: center;
+  }
+  .skills {
+    text-align: center;
+    margin: 70px 0;
+  }
+  .skills__subtitle::before {
+    transform: translateX(-50%);
+    left: 50%;
+  }
+}
+@media (max-width: 640px) {
+  .social {
+    text-align: start;
+  }
+  .social__inst {
+    display: block;
+    position: relative;
+    margin-bottom: 16px;
+    padding-left: 35px;
+  }
+  .social__inst::before {
+    display: block;
+  }
+  .social__dribble::before {
+    display: inline;
+  }
+  .education {
+    text-align: start;
+  }
+  .skills {
+    text-align: start;
+  }
+  .skills__subtitle::before {
+    transform: translateX(0);
+    left: 0;
+  }
+}
+@media (max-width: 480px) {
+  .head__secondname {
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-family: "Bai Jamjuree";
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: -0.01em;
+  }
+  .social {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.right-side {
+  width: 57%;
+  padding: 115px 0 160px;
+}
+.right-side__info-text {
+  margin-bottom: 35px;
+  margin-left: 30px;
+  max-width: 600px;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: -0.26px;
+  color: #ffffff;
+}
+.right-side__img {
+  display: block;
+  margin: 55px 0 190px auto;
+}
+
+.box {
+  padding: 40px;
+  margin: 30px 0 25px;
+  background-color: #FAFAFA;
+  cursor: pointer;
+}
+.box:hover {
+  transition: 0.4s;
+  background-color: #cecece;
+}
+.box__date {
+  color: #A3A3A3;
+}
+.box__title {
+  margin: 8px 0;
+}
+.box__text {
+  margin-bottom: 35px;
+  max-width: 555px;
+}
+
+@media (max-width: 1120px) {
+  .right-side {
+    width: 100%;
+    padding: 0;
+  }
+  .right-side__info-text {
+    display: none;
+  }
+  .right-side__img {
+    display: block;
+    margin: 55px auto 70px;
+    width: 100%;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1112px;
+  padding: 0 10px;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  margin: 0;
+}
+
+.title-h2 {
+  font-family: "Bai Jamjuree";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+
+.subtitle-h3 {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: -0.26px;
+  color: #000000;
+}
+
+.text-p {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.09px;
+  color: #525252;
+}
+
+.link-a {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: -0.26px;
+  color: #000000;
+}
+
+.date-span {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.18px;
+}
+
+.background-block {
+  position: absolute;
+  min-width: 100%;
+  min-height: 695px;
+  left: 0;
+  background-color: #000000;
+  z-index: -1;
+}
+
+@media (max-width: 1120px) {
+  .container {
+    display: block;
+  }
+  .background-block {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=common.css.map */

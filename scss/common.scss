@@ -1,0 +1,98 @@
+@import "fonts";
+@import "variables";
+@import "home";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1112px;
+  padding: 0 10px;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  margin: 0;
+}
+
+.title-h2 {
+  font-family: 'Bai Jamjuree';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+  color: $dark-color;
+}
+
+.subtitle-h3 {
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: -0.26px;
+  color: $dark-color;
+}
+
+.text-p {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.09px;
+  color: $box-text-color;
+}
+
+.link-a {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: -0.26px;
+  color: $dark-color;
+}
+
+.date-span {
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.18px;
+}
+
+//BACKGROUND BLOCK
+
+.background-block {
+  position: absolute;
+  min-width: 100%;
+  min-height: 695px;
+  left: 0;
+  background-color: $dark-color;
+  z-index: -1;
+}
+
+@media (max-width: 1120px) {
+  .container {
+    display: block;
+  }
+
+  .background-block {
+    display: none;
+  }
+}
